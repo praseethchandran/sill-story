@@ -31,9 +31,10 @@ function result() {
     ytrem = randomValueFromArray(insertY);
     ztrem = randomValueFromArray(insertZ);
     newStory = newStory.replace(':insertx:', xtrem);
+    newStory = newStory.replace(':insertx:', xtrem); 
     newStory = newStory.replace(':inserty:', ytrem);
     newStory = newStory.replace(':insertz:', ztrem);
-    newStory = newStory.replace(':insertx:', xItem); 
+    
     if (customName.value !== '') {
         newStory = newStory.replace('Bob', customName.value);
     }
